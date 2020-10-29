@@ -8,7 +8,7 @@ const labelpassword = document.querySelector('.labelpassword');
 function boxFocus(param, transform) {
     param.addEventListener('click', e => {
         transform.style.transition = `all 0.5s ease`
-        transform.style.fontSize = `12px`
+        transform.style.fontSize = `10px`
         transform.style.top = `-15px`
         transform.style.left = `0px`
     });
@@ -18,7 +18,7 @@ function boxFocus(param, transform) {
 function boxClear (param, transform){
     param.addEventListener('blur', e => {
         transform.style.transition = `all 0.5s ease`
-        transform.style.fontSize = `19px`
+        transform.style.fontSize = `16px`
         transform.style.top = `0px`
         transform.style.left = `5px`
     });
