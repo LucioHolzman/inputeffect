@@ -6,7 +6,7 @@ const labelpassword = document.querySelector('.labelpassword');
 
 //Accion de focus en la caja
 function boxFocus(param, transform) {
-    param.addEventListener('click', e => {
+    param.addEventListener('focus', e => {
         transform.style.transition = `all 0.5s ease`
         transform.style.fontSize = `10px`
         transform.style.top = `-15px`
@@ -25,10 +25,13 @@ function boxClear (param, transform){
 };
 
 //Username
+boxClear(username, labelusername);
 boxFocus(username, labelusername);
-//boxClear(username, labelusername);
+    
+
+
 
 //Password
 boxFocus(password, labelpassword);
-//boxClear(password, labelpassword);
+boxClear(password, labelpassword);
 
