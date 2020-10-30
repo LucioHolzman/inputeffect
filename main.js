@@ -17,10 +17,12 @@ function boxFocus(param, transform) {
 //Valor por defecto si la caja se encuentra vacia
 function boxClear (param, transform){
     param.addEventListener('blur', e => {
+        if(param.value.length == 0){
         transform.style.transition = `all 0.5s ease`
         transform.style.fontSize = `16px`
         transform.style.top = `0px`
         transform.style.left = `5px`
+        }
     });
 };
 
